@@ -7,7 +7,7 @@
     "start": "next start",
     "lint": "next lint",
     "build-public": "npm run copy-monaco && npm run del-source-maps",
-    "del-source-maps": "find public -name '*.js' | xargs sed -i '/sourceMappingURL/d'",
+    "del-source-maps": "find public -name '*.js' | xargs gsed -i '/sourceMappingURL/d'",
     "copy-monaco": "mkdir -p public/monaco && rm -rf public/monaco/vs && cp -r node_modules/monaco-editor/min/vs public/monaco/vs"
   },
   "dependencies": {
