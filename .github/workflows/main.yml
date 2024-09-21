@@ -23,7 +23,7 @@ jobs:
       run: cd streamlit_elements/frontend && npm install
 
     - name: Build
-      run: cd streamlit_elements/frontend && npm run build && git add build/
+      run: cd streamlit_elements/frontend && npm run build
 
     - name: Commit and Push
       run: |
