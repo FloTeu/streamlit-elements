@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - feature/setup
+      - main
 
 jobs:
   build:
@@ -19,7 +20,7 @@ jobs:
         node-version: '14'  # Use the version you need
 
     - name: Point to frontend dir
-      run: cd streamlit/elements/frontend
+      run: cd streamlit_elements/frontend
 
     - name: Install dependencies
       run: npm install
