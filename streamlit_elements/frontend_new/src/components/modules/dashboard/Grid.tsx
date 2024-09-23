@@ -19,16 +19,18 @@ const Grid = ({ children, ...props }: ElementsDashboardGridProps) => (
     <ResponsiveGridLayout {...props}>
       {[children].flat().map(child => {
         if (React.isValidElement(child) && child.key !== undefined) {
-          if (!child.props.hasOwnProperty("style")) {
-            child.props.style = {}
+          const childElement = child as React.ReactElement<any>;
+
+          if (!childElement.props.hasOwnProperty("style")) {
+            childElement.props.style = {}
           }
 
-          const style = child.props.style
+          const style = childElement.props.style
           style.height = "100%"
           style.width = "100%"
           style.boxSizing = "border-box"
 
-          return <div key={child.key}>{child}</div>
+          return <div key={childElement.key}>{childElement}</div>
         }
         else {
           return child

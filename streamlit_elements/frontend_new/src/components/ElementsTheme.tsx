@@ -1,3 +1,4 @@
+import React, { ReactNode } from "react"
 import { useEffect, useState } from "react"
 import { PaletteMode } from "@mui/material"
 import { Theme as MuiTheme, ThemeProvider, createTheme } from "@mui/material/styles"

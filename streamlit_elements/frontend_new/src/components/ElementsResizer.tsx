@@ -1,3 +1,4 @@
+import React, { ReactNode } from "react"
 import ResizeObserver from "resize-observer-polyfill"
 import { Streamlit } from "streamlit-component-lib"
 

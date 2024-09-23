@@ -1,3 +1,4 @@
+import React, { ReactNode } from "react"
 import { Skeleton, Box } from "@mui/material"
 import { Streamlit, withStreamlitConnection } from "streamlit-component-lib"
 
