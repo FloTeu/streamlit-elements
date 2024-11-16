@@ -1,7 +1,7 @@
 [project]
 name = "streamlit-elements-fte"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.1.1"
+description = "Fork of streamlit-elements with minor bugfixes"
 authors = [
     { name = "fteutsch", email = "fteutsch@inovex.de" }
 ]
