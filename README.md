@@ -1,7 +1,7 @@
 ✨ Streamlit Elements &nbsp; [![GitHub][github_badge]][github_link] [![PyPI][pypi_badge]][pypi_link]
 =====================
 
-Fork of streamlit-elements in order to fix some bugs in latest streamlit versions.
+> **⚠️ WARNING:** Not production ready fork of streamlit-elements in order to fix some bugs with latest streamlit versions.
 
 Create a draggable and resizable dashboard in Streamlit, featuring Material UI widgets, Monaco editor (Visual Studio Code), Nivo charts, and more!
 
