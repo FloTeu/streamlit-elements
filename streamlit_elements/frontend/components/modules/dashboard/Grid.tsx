@@ -19,18 +19,21 @@ const Grid = ({ children, ...props }: ElementsDashboardGridProps) => (
     <ResponsiveGridLayout {...props}>
       {[children].flat().map(child => {
         if (React.isValidElement(child) && child.key !== undefined) {
-          if (!child.props.hasOwnProperty("style")) {
-            child.props.style = {}
+          // Create a new style object with the desired properties
+          const newStyle = {
+            ...child.props.style,
+            height: "100%",
+            width: "100%",
+            boxSizing: "border-box",
           }
 
-          const style = child.props.style
-          style.height = "100%"
-          style.width = "100%"
-          style.boxSizing = "border-box"
-
-          return <div key={child.key}>{child}</div>
-        }
-        else {
+          // Return a cloned element with the new style
+          return (
+            <div key={child.key}>
+              {React.cloneElement(child, { style: newStyle })}
+            </div>
+          )
+        } else {
           return child
         }
       })}

@@ -2,7 +2,7 @@
   "name": "streamlit-elements",
   "private": true,
   "scripts": {
-    "dev": "npm run build-public && next dev -H 127.0.0.1 -p 3001",
+    "dev": "npm run build-public && next dev -H 127.0.0.1 -p 3002",
     "build": "npm run build-public && next build && next export -o build",
     "start": "next start",
     "lint": "next lint",
