@@ -10,6 +10,6 @@ def booleanize(s):
 if not booleanize(os.environ.get("DEBUG", "")) and version.__release__:
     ELEMENTS_FRONTEND = {"path": (Path(version.__file__).parent/"frontend/build").resolve()}
 else:
-    ELEMENTS_FRONTEND = {"url": "http://127.0.0.1:3002"}
+    ELEMENTS_FRONTEND = {"url": "http://127.0.0.1:3001"}
 
 render_component = declare_component("streamlit_elements", **ELEMENTS_FRONTEND)
