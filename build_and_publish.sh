@@ -6,6 +6,7 @@ if [[ "$version_update" == [Yy]* ]]; then
     cd streamlit_elements/frontend && npm install && npm run build
     # rye build
     # using setup file in order to include frontend build (not included for whatever reason in case of rye build)
+    cd ../../
     python setup.py sdist bdist_wheel
 
     # publish
