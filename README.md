@@ -34,7 +34,7 @@ It also includes a feature to create draggable and resizable dashboards.
 #### Installation
 
 ```sh
-pip install streamlit-elements==0.1.*
+pip install streamlit-elements-fte==0.1.*
 ```
 
 **Caution**: It is recommended to pin the version to `0.1.*`. Future versions might introduce breaking API changes.
